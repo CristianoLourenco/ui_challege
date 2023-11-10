@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_challenge_flutter/app_config.dart';
 
 class BackgroundImageWidget extends StatelessWidget {
   final EdgeInsets padding;
@@ -18,7 +19,7 @@ class BackgroundImageWidget extends StatelessWidget {
           width: double.maxFinite,
           height: double.maxFinite,
           child: Image.asset(
-            'assets/images/home_bg.jpg',
+            AppConfig().backgroundImage,
             fit: BoxFit.cover,
             opacity: const AlwaysStoppedAnimation(.5),
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_challenge_flutter/app_config.dart';
 import 'package:ui_challenge_flutter/widgets/background_image_widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -35,7 +36,20 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Flexible(
-              child: Container(color: Colors.yellow),
+              child: Card(
+                child: Row(
+                  children: [
+                    Column(
+                      children: [
+                        const Text('Wed 16'),
+                        Image.asset(AppConfig().cloudSunnyIcon),
+                        const Text('22°c'),
+                        const Text('1-5\nkm/h'),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),

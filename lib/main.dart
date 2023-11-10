@@ -13,10 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-          useMaterial3: true,
-          // colorScheme: ColorScheme.fromSeed(seedColor: ),
+          useMaterial3: true, 
           textTheme: GoogleFonts.robotoTextTheme(),
-          iconTheme: Theme.of(context).iconTheme.copyWith(color: Colors.white)),
+          iconTheme: Theme.of(context).iconTheme.copyWith(
+            
+            color: Colors.white)),
       home: const HomePage(),
     );
   }
